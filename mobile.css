@@ -24,20 +24,32 @@ img {
 /* Nintendo Top Navigation
 ------------------------------------------ */
 header {
-
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #e20013;
 }
 
 header nav ul {
-
+   display: flex;
+   justify-content: space-between;
+   list-style-type: none;
+   padding-bottom: .75rem;
 }
 
 
 header nav a {
-
+   color: white;
+   text-decoration: none;
+   padding: .5rem;
+   border-radius: 2rem;
+   transition: all .75s ease;
+   margin: 0 .5rem .5rem .5rem;
 }
 
 header nav a:hover {
-
+   background-color: white;
+   color: #e20013;
 }
 
 
@@ -60,46 +72,73 @@ section.hero-image img {
 ------------------------------------------ */
 /* ⬇ Container for name, price, and buy buttons */
 section.game {
-
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   padding: 2rem;
 }
 
 /* ⬇ Both the h1 and h2 */
-section.game-title {
-
+.game-title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: .75rem;
 }
 
 /* ⬇ Untitled Goose Game */
-section.game-title h1 {
-
+.game-title h1 {
+   font-weight: bold;
+   font-size: 125%;
 }
 
 /* ⬇ Available Now */
-section.game-title h2 {
-
+.game-title h2 {
+   font-weight: normal;
+   color: #A5A5A5;
 }
 
 /* ⬇ Price of the game */
 p.price {
-   
+   font-size: 150%;
+   margin-bottom: .25rem;
 }
 
 /* ⬇ Container for buy buttons */
 div.buy {
-
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 /* ⬇ List with buy buttons */
 div.buy li {
-
+   list-style-type: none;
+   margin: 0 2rem 0 2rem;
+}
+div.options ul{
+   display: flex;
+   flex-direction: row;
 }
 
 /* ⬇ Buy Digital & Buy Physical links */
 div.buy a {
-
+   background-color: #e20013;
+   border: 2px solid #A5A5A5;
+   padding: 1.25rem;
+   font-size: 95%;
+   display: block;
+   border-radius: 2rem;
+   color: white;
+   text-decoration: none;
+   margin: .5rem;
+   transition: all 1s ease;
 }
 
 div.buy a:hover {
-
+   transform: scale(1.25);
+   box-shadow: 0 10px 10px -10px black;
 }
 
 
@@ -109,17 +148,22 @@ div.buy a:hover {
 ------------------------------------------ */
 /* ⬇ Container area for screen shots */
 section.screen-shots {
-
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1rem;
+   background-color: #3D6BD5;
+   padding: 1rem;
 }
 
 /* ⬇ Selects an individual image */
-section.screen-shots img:nth-child() {
-
+section.screen-shots img:nth-child(3) {
+   grid-column: 1/3;
+   grid-row: 1/3;
 }
 
 /* ⬇ Affects all screen shot images */
 section.screen-shots img {
-
+   border: 2px solid #A5A5A5;
 }
 
 
@@ -129,7 +173,10 @@ section.screen-shots img {
 ------------------------------------------ */
 /* ⬇ Contains DESCRIPTION, GOOSE-BADGE, and PLAY-MODES */
 main {
-
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: space-around;
+   align-items: center;
 }
 
 
@@ -139,22 +186,30 @@ main {
 
 /* ⬇ Container for game description info */
 section.description {
-
+   font-size: 105%;
+   line-height: 1.3;
+   padding: 1rem 2rem;
+   grid-row: 2/3;
 }
 
 /* ⬇ It's a lovely day in the village */
 section.description h2 {
-
+   font-size: 135%;
+   margin-bottom: 1rem;
+   font-weight: bold;
 }
 
 /* ⬇ Featuring */
 section.description h3 {
-
+   font-size: 120%;
+   margin-bottom: 1rem;
+   font-weight: bold;
 }
 
 /* ⬇ List of features */
 section.description li {
-
+   margin-left: 2rem;
+   margin-bottom: .75rem;
 }
 
 
@@ -164,7 +219,9 @@ section.description li {
 ------------------------------------------ */
 /* ⬇ Goose in yellow badge */
 img.goose-badge {
-
+   grid-row: 3/4;
+   grid-column: 1/2;
+   margin-left: 6.5rem;
 }
 
 
@@ -174,12 +231,22 @@ img.goose-badge {
 ------------------------------------------ */
 /* ⬇ Container for play modes area */
 section.play-modes {
-
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: .25rem;
+   justify-content: center;
+   align-items: center;
+   background-color: #e9e9e9;
+   padding: 1rem;
 }
 
 /* ⬇ Play Modes title */
 section.play-modes h2 {
-
+   font-weight: bold;
+   font-size: 125%;
+   grid-column: 1/4;
+   margin-left: 12.25rem;
+   margin-bottom: .5rem;
 }
 
 /* ⬇ Play mode icon images */
@@ -192,5 +259,9 @@ section.play-modes img {
 /* Footer
 ------------------------------------------ */
 footer {
-
+   background-color: #3D6BD5;
+   text-align: center;
+   color: white;
+   font-size: 90%;
+   padding: .95rem;
 }

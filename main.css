@@ -92,18 +92,18 @@ section.game {
 }
 
 /* ⬇ Both the h1 and h2 */
-section.game-title {
+.game-title {
 
 }
 
 /* ⬇ Untitled Goose Game */
-section.game-title h1 {
+.game-title h1 {
    font-size: 225%;
    margin-bottom: .25rem;
 }
 
 /* ⬇ Available Now */
-section.game-title h2 {
+.game-title h2 {
    font-weight: normal;
    color: #A5A5A5;
 }
@@ -251,7 +251,7 @@ section.play-modes h2 {
 
 /* ⬇ Play mode icon images */
 section.play-modes img {
-
+   
 }
 
 
